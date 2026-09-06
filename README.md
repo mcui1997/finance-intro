@@ -1,37 +1,57 @@
+<div align="center">
+
 # Start Here
 
-A gentle, one page guide to growing your money. Written for anyone who was never taught. It covers what money is, why cash quietly loses value, the four building blocks (stocks, bonds, gold, bitcoin), how to pick a mix, how to buy it, and the small upkeep it needs.
+### The calm way to grow your money
 
-## Files
+*A gentle, complete beginner's guide for anyone who was never taught.*
 
-- `index.html` — the page and all its content
-- `styles.css` — colors, type, and layout
-- `script.js` — the pie charts and the interactive mix builder
+</div>
 
-## Run it locally
+---
 
-From the folder with `index.html`:
+## About
 
-```
-python3 -m http.server 8000
-```
+Start Here walks a total beginner from knowing nothing about money to owning a simple, sensible portfolio they can actually stick with. No jargon. No hype. No promises of getting rich quick.
 
-Then open the forwarded port (or http://localhost:8000). Serve it over http rather than opening the file directly, so it behaves the same way it will once published.
+It reads as ten short steps, each one building on the last. The voice is warm and plain, the kind of thing you would say to a friend across a table. Every idea is explained with something you can picture: a grocery cart, a snowball rolling downhill, a slice of your favorite coffee company.
 
-## Publish it with GitHub Pages
+## The ten steps
 
-1. Push these files to the root of a repository.
-2. In the repo, go to Settings, then Pages.
-3. Under Build and deployment, set Source to Deploy from a branch.
-4. Pick your branch and the root folder, then save.
-5. Wait a minute. Your live link appears at the top of that same page.
+| | Step | What it covers |
+|---|---|---|
+| 1 | Intro to Finance | Why this is for you, and how simple it really is |
+| 2 | What Is Money | A short history, from shells to the dollar |
+| 3 | Why Cash Loses Value | Inflation, shown with a grocery cart |
+| 4 | The Power of Compounding | Growth that feeds on itself |
+| 5 | The Four Building Blocks | Stocks, bonds, gold, and bitcoin |
+| 6 | Choosing Your Mix | Three starting mixes and a pie you build yourself |
+| 7 | How to Invest | Buying steadily, without timing the market |
+| 8 | Rebalancing | The once a year tidy up |
+| 9 | Accounts and Brokers | Where the money actually lives |
+| 10 | Getting Started | The whole plan, and your first steps |
+
+## What makes it different
+
+- **Plain words only.** If a ten year old would not use the word, it is not in here.
+- **One thing to do.** Pick a mix, buy a little every payday, tidy it once a year. That is the whole plan.
+- **An interactive mix builder.** On step six, the reader picks a comfort level, drags their age, and watches their own pie appear.
+- **Calm by design.** Soft colors, room to breathe, and one idea per screen.
+
+## Built with
+
+Plain HTML, CSS, and a little JavaScript. No frameworks, no build step, no tracking, no ads. Just three files that open in any browser.
 
 ## Make it yours
 
-- The title lives in the hero and the browser tab. Right now it reads "Start Here."
-- Every asset color is a variable at the top of `styles.css`, so a recolor is one line.
-- The mix rules live in `script.js`: gold stays at 15 percent, bitcoin is the risk dial (5, 10, or 15), bonds follow your age minus 20, and stocks fill the rest.
+- The colors are set as variables at the top of `styles.css`, so a full recolor is a few lines.
+- The four asset colors flow through every chart from those same variables.
+- The mix rules live in `script.js`. Gold holds at fifteen percent, bitcoin is the risk dial at five, ten, or fifteen, bonds follow your age minus twenty, and stocks fill the rest.
 
-## A note
+## Put it online
 
-This guide is for learning, not personal financial advice. Investing always carries risk, including the chance of loss.
+Push these files to a repository, then turn on GitHub Pages in the repository settings. Your live link appears a minute later, ready to share.
+
+---
+
+> A gentle note. This guide is for learning, not personal financial advice. It does not know anyone's full situation. Investing always carries some risk, including the chance of losing money.
