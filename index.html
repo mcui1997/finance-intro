@@ -4,310 +4,521 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Start Here: The Calm Way to Grow Your Money</title>
-  <meta name="description" content="A gentle first guide to growing your money, written for anyone who was never taught. What money is, what to own, how to buy it, and how little you have to do." />
+  <meta name="description" content="A gentle, complete beginner's guide to growing your money. Read it one step at a time." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="app">
 
-  <header class="hero">
-    <div class="hero-inner">
-      <div class="sprout" aria-hidden="true">
-        <svg viewBox="0 0 120 140" width="120" height="140" role="img">
-          <ellipse class="soil" cx="60" cy="126" rx="42" ry="7"></ellipse>
-          <circle class="coin" cx="60" cy="120" r="16"></circle>
-          <text class="coin-mark" x="60" y="126" text-anchor="middle">$</text>
-          <path class="stem" d="M60 118 C60 92 60 74 60 52" fill="none"></path>
-          <path class="leaf leaf-l" d="M60 78 C40 74 30 60 34 46 C50 48 62 60 60 78 Z"></path>
-          <path class="leaf leaf-r" d="M60 66 C80 62 90 48 86 34 C70 36 58 48 60 66 Z"></path>
-        </svg>
-      </div>
-      <h1>Start Here</h1>
-      <p class="lede">The calm way to grow your money. Written for anyone who was never taught.</p>
-      <p class="sub">No jargon. No pressure. Just the parts that matter.</p>
-    </div>
-  </header>
+    <aside class="rail">
+      <div class="rail-brand">Start&nbsp;Here</div>
+      <nav class="steps" role="tablist" aria-label="Guide steps" aria-orientation="vertical">
+        <button class="step" role="tab" id="tab-1" aria-controls="panel-1" aria-selected="true"><span class="n">1</span><span class="s-title">Intro to Finance</span></button>
+        <button class="step" role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1"><span class="n">2</span><span class="s-title">What Is Money</span></button>
+        <button class="step" role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" tabindex="-1"><span class="n">3</span><span class="s-title">Why Cash Loses Value</span></button>
+        <button class="step" role="tab" id="tab-4" aria-controls="panel-4" aria-selected="false" tabindex="-1"><span class="n">4</span><span class="s-title">The Power of Compounding</span></button>
+        <button class="step" role="tab" id="tab-5" aria-controls="panel-5" aria-selected="false" tabindex="-1"><span class="n">5</span><span class="s-title">The Four Building Blocks</span></button>
+        <button class="step" role="tab" id="tab-6" aria-controls="panel-6" aria-selected="false" tabindex="-1"><span class="n">6</span><span class="s-title">Choosing Your Mix</span></button>
+        <button class="step" role="tab" id="tab-7" aria-controls="panel-7" aria-selected="false" tabindex="-1"><span class="n">7</span><span class="s-title">How to Invest</span></button>
+        <button class="step" role="tab" id="tab-8" aria-controls="panel-8" aria-selected="false" tabindex="-1"><span class="n">8</span><span class="s-title">Rebalancing</span></button>
+        <button class="step" role="tab" id="tab-9" aria-controls="panel-9" aria-selected="false" tabindex="-1"><span class="n">9</span><span class="s-title">Accounts and Brokers</span></button>
+        <button class="step" role="tab" id="tab-10" aria-controls="panel-10" aria-selected="false" tabindex="-1"><span class="n">10</span><span class="s-title">Getting Started</span></button>
+      </nav>
+    </aside>
 
-  <main>
+    <main class="content">
 
-    <section class="chapter" id="c1">
-      <div class="wrap">
-        <span class="badge">1</span>
-        <h2>This one is for you</h2>
-        <p>Money can feel like a language everyone else learned in a room you missed.</p>
-        <p>It is not.</p>
-        <p>The core ideas are simple. They were just never explained kindly. This guide starts at the very beginning. What money is. Why saving alone quietly loses. What to actually own. How to buy it. And how little you have to do once you start.</p>
-        <p>You do not need to be good at math. You do not need a lot to begin. You just need to understand a few honest ideas, and then be patient.</p>
-        <p>That is the whole secret. Patience beats cleverness here.</p>
-      </div>
-    </section>
-
-    <section class="chapter" id="c2">
-      <div class="wrap">
-        <span class="badge">2</span>
-        <h2>What is money, really</h2>
-        <p>Money is just something we all agree to trust.</p>
-        <p>That agreement has changed many times. Long ago people traded shells and beads. Then came coins made of metal. Then gold, because it was rare and did not rot. Then paper notes that stood for gold sitting in a vault. Then the paper stopped standing for gold at all. Today a dollar is trust, backed by a government, and little else.</p>
-        <p>Here is the pattern worth noticing. Every kind of money so far has slowly lost value over time. The people in charge could always make more of it. And they always did.</p>
-        <p>That is not a scary secret. It is just the water you are swimming in. Once you see it, everything else makes sense.</p>
-      </div>
-      <figure class="figure">
-        <ol class="timeline" aria-label="A short history of money">
-          <li><span class="dot"><svg viewBox="0 0 24 24"><path d="M12 4c4 0 7 4 7 9a7 7 0 0 1-14 0c0-2 1-4 3-4" fill="none"/><path d="M12 4v9" fill="none"/></svg></span><span class="t-name">Shells</span></li>
-          <li><span class="dot"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7" fill="none"/><circle cx="12" cy="12" r="3" fill="none"/></svg></span><span class="t-name">Coins</span></li>
-          <li><span class="dot"><svg viewBox="0 0 24 24"><rect x="5" y="9" width="14" height="7" rx="1.5" fill="none"/><path d="M8 9l1-2h6l1 2" fill="none"/></svg></span><span class="t-name">Gold</span></li>
-          <li><span class="dot"><svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="10" rx="1.5" fill="none"/><circle cx="12" cy="12" r="2.5" fill="none"/></svg></span><span class="t-name">Paper notes</span></li>
-          <li><span class="dot"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none"/><path d="M12 8v8M10 10h3a1.5 1.5 0 0 1 0 3h-2a1.5 1.5 0 0 0 0 3h3" fill="none"/></svg></span><span class="t-name">The dollar</span></li>
-          <li><span class="dot dot-now"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none"/><path d="M9.5 9.5a2.5 2.5 0 0 1 4.6 1.3c0 1.7-2.1 1.9-2.1 3.2" fill="none"/><circle cx="12" cy="17" r="0.6"/></svg></span><span class="t-name">Today, trust</span></li>
-        </ol>
-        <figcaption>The form keeps changing. The slow leak stays the same.</figcaption>
-      </figure>
-    </section>
-
-    <section class="chapter" id="c3">
-      <div class="wrap">
-        <span class="badge">3</span>
-        <h2>Why saved cash quietly shrinks</h2>
-        <p>Say you keep 100 dollars in a drawer.</p>
-        <p>Next year that same 100 dollars buys a little less. The year after, less again. The money did not move. Prices rose around it. This slow rise in prices is called inflation.</p>
-        <p>Nobody stole from you. But you can buy less. That is the quiet cost of holding only cash.</p>
-        <p>Some cash is still good and needed. You want a cushion for surprises. A broken phone. A car repair. A few months of expenses set aside so you never have to panic.</p>
-        <p>But cash sitting still for years is a slow leak. To stay ahead, your money needs to grow at least as fast as prices do. That is why you own things, not just dollars.</p>
-      </div>
-      <figure class="figure">
-        <div class="erode" aria-label="What 100 dollars buys over time, even at a gentle 3 percent inflation">
-          <div class="erode-bar"><div class="fill" style="height:100%"></div><span class="cap">$100<small>today</small></span></div>
-          <div class="erode-bar"><div class="fill" style="height:74%"></div><span class="cap">~$74<small>in 10 years</small></span></div>
-          <div class="erode-bar"><div class="fill" style="height:55%"></div><span class="cap">~$55<small>in 20 years</small></span></div>
+      <!-- STEP 1 -->
+      <section class="panel" id="panel-1" role="tabpanel" aria-labelledby="tab-1" tabindex="0">
+        <div class="sprout" aria-hidden="true">
+          <svg viewBox="0 0 120 140" width="110" height="128" role="img">
+            <ellipse class="soil" cx="60" cy="126" rx="42" ry="7"></ellipse>
+            <circle class="coin" cx="60" cy="120" r="16"></circle>
+            <text class="coin-mark" x="60" y="126" text-anchor="middle">$</text>
+            <path class="stem" d="M60 118 C60 92 60 74 60 52" fill="none"></path>
+            <path class="leaf leaf-l" d="M60 78 C40 74 30 60 34 46 C50 48 62 60 60 78 Z"></path>
+            <path class="leaf leaf-r" d="M60 66 C80 62 90 48 86 34 C70 36 58 48 60 66 Z"></path>
+          </svg>
         </div>
-        <figcaption>The same 100 dollars, losing quiet ground to rising prices.</figcaption>
-      </figure>
-    </section>
 
-    <section class="chapter" id="c4">
-      <div class="wrap">
-        <span class="badge">4</span>
-        <h2>The quiet magic of growth on growth</h2>
-        <p>When you own good things, they tend to grow. And then the growth grows too.</p>
-        <p>This is called compounding. It is the closest thing to magic in money.</p>
-        <p>Picture a small snowball rolling downhill. It picks up snow. Now it is bigger, so it picks up even more. Given a long hill, it becomes huge. Your money works the same way, if you give it time. A little growth each year stacks on top of last year's growth. Ten years feels slow. Thirty years looks unbelievable.</p>
-        <p>The catch is simple. It only works if you start, and if you leave it alone.</p>
-        <p>So the goal is not to get rich this year. The goal is to own steady, growing things and let time do the heavy lifting.</p>
-      </div>
-      <figure class="figure">
-        <svg class="grow-chart" viewBox="0 0 640 260" role="img" aria-label="Money set aside grows slowly in a straight line, while money invested curves upward over time">
-          <line class="axis" x1="40" y1="220" x2="620" y2="220"></line>
-          <line class="axis" x1="40" y1="20" x2="40" y2="220"></line>
-          <path class="line-flat" d="M40 220 L620 150" fill="none"></path>
-          <path class="line-grow" d="M40 220 C300 210 460 150 620 40" fill="none"></path>
-          <circle class="end-flat" cx="620" cy="150" r="4"></circle>
-          <circle class="end-grow" cx="620" cy="40" r="5"></circle>
-          <text class="lbl lbl-flat" x="612" y="140" text-anchor="end">Only saving</text>
-          <text class="lbl lbl-grow" x="612" y="32" text-anchor="end">Owning and growing</text>
-          <text class="axis-note" x="40" y="240">Time</text>
-        </svg>
-        <figcaption>Same start. The gap widens the longer you wait.</figcaption>
-      </figure>
-    </section>
+        <h2>Intro to Finance</h2>
+        <p class="lead">Money can feel like a language everyone else learned in a room you missed.</p>
+        <p>It is not. There is no secret club. There is no gene for this. The people who seem to just get money simply had it explained to them once, clearly, by someone patient. That is all this guide is trying to be. That patient person, taking as long as you need.</p>
 
-    <section class="chapter" id="c5">
-      <div class="wrap">
-        <span class="badge">5</span>
-        <h2>Four simple building blocks</h2>
-        <p>You do not need hundreds of choices. You need four. Each one has a job. Together they balance each other.</p>
-      </div>
-      <figure class="figure">
-        <div class="assets">
-          <article class="asset a-stocks">
-            <span class="glyph"><svg viewBox="0 0 24 24"><path d="M4 16l5-5 4 4 7-8" fill="none"/><path d="M16 7h4v4" fill="none"/></svg></span>
-            <h3>Stocks</h3>
-            <p>Tiny pieces of real companies. When they grow and earn, your slice grows too. This is your engine.</p>
-          </article>
-          <article class="asset a-bonds">
-            <span class="glyph"><svg viewBox="0 0 24 24"><path d="M4 18c4 0 4-12 8-12s4 12 8 12" fill="none"/></svg></span>
-            <h3>Bonds</h3>
-            <p>Loans that pay you steady interest. They move slower and calmer than stocks. The ballast that steadies the boat.</p>
-          </article>
-          <article class="asset a-gold">
-            <span class="glyph"><svg viewBox="0 0 24 24"><rect x="4" y="14" width="7" height="5" rx="1" fill="none"/><rect x="13" y="14" width="7" height="5" rx="1" fill="none"/><rect x="8.5" y="8" width="7" height="5" rx="1" fill="none"/></svg></span>
-            <h3>Gold</h3>
-            <p>Old, rare, and trusted. It earns nothing. It just holds its value while paper money fades. Your insurance for hard years.</p>
-          </article>
-          <article class="asset a-bitcoin">
-            <span class="glyph"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none"/><path d="M10 8v8M13 8v8M9 8h4a2 2 0 0 1 0 4H9m0 0h4.4a2 2 0 0 1 0 4H9" fill="none"/></svg></span>
-            <h3>Bitcoin</h3>
-            <p>New, digital, and limited. Only a fixed amount can ever exist, so it cannot be watered down. A small, bold bet with room to grow.</p>
-          </article>
-        </div>
-      </figure>
-      <div class="wrap">
-        <p>You will own all four. The mix is up to you. That is the next page.</p>
-      </div>
-    </section>
+        <h3>You are not behind</h3>
+        <p>If you are reading this feeling a little late, or a little lost, take a breath. You are neither. Most adults were never taught any of this. Not in school. Often not at home. So they carry a quiet unease about money and avoid the whole subject for years. That avoidance is the only real mistake, and you are already past it. You showed up. That is the hard part, and it is behind you.</p>
+        <p>You do not need to be good at math. You do not need a finance degree. You do not need a lot of money to begin. You need a little curiosity and a little patience. You clearly have the first. We will build the second together.</p>
 
-    <section class="chapter" id="c6">
-      <div class="wrap">
-        <span class="badge">6</span>
-        <h2>Pick a mix you can live with</h2>
-        <p>How much of each? That depends on you. Here is the one question that matters. How much bounce can you handle without panic?</p>
-        <p>Gold stays steady in every mix, as your insurance. Stocks stay high while you are young, because time is on your side. So the real knob you turn is bitcoin. More bitcoin means more room to grow, and a bumpier ride.</p>
-        <p>Three honest starting points, shown for someone in their twenties.</p>
-      </div>
-      <figure class="figure">
-        <div class="pies">
-          <div class="pie"><svg class="donut" data-mix="cautious" viewBox="0 0 160 160"></svg><span class="pie-name">Cautious</span><span class="pie-note">The calmest ride</span></div>
-          <div class="pie"><svg class="donut" data-mix="balanced" viewBox="0 0 160 160"></svg><span class="pie-name">Balanced</span><span class="pie-note">The middle path</span></div>
-          <div class="pie"><svg class="donut" data-mix="bold" viewBox="0 0 160 160"></svg><span class="pie-name">Bold</span><span class="pie-note">More bounce, more reward</span></div>
-        </div>
-        <div class="pie-legend" id="pieLegend"></div>
-      </figure>
-      <div class="wrap">
-        <p>There are no wrong answers. The best mix is the one you will not abandon when prices drop. And they will drop sometimes. That is normal and healthy.</p>
-        <h3 class="sub-head">A gentle rule for bonds and age</h3>
-        <p>While you are young, keep bonds low. You have decades to ride out the bumps, so you want more of your money growing. As you age, you slowly add bonds for calm.</p>
-        <p>A simple guide. Your bond share is roughly your age minus 20. At 25 that is about 5 percent. At 40, about 20 percent. Those extra bonds come out of stocks. Gold and bitcoin stay where you set them.</p>
-        <p>Try it below. Pick a mix, set your age, and see your own plan.</p>
-      </div>
+        <h3>What this guide is</h3>
+        <p>This is a complete beginner's path, start to finish. By the end you will understand:</p>
+        <ul class="learn">
+          <li>What money actually is, and why it slowly loses value</li>
+          <li>Why owning things beats holding cash over the years</li>
+          <li>The four simple building blocks worth owning</li>
+          <li>How to choose a mix that fits your life and your nerves</li>
+          <li>How to buy it, in a way that removes stress and guesswork</li>
+          <li>The small, calm upkeep it needs, and nothing more</li>
+          <li>Where all of this lives, and how to open your first account</li>
+        </ul>
+        <p>That is the entire game. There is no secret chapter eleven where wealthy people hide the good stuff. This is the good stuff.</p>
 
-      <div class="tool" role="group" aria-label="Build your own mix">
-        <div class="tool-controls">
-          <div class="control">
-            <span class="control-label">Your comfort with bounce</span>
-            <div class="risk-group" role="radiogroup" aria-label="Risk level">
-              <button type="button" class="risk" data-risk="cautious" role="radio" aria-checked="false">Cautious</button>
-              <button type="button" class="risk is-on" data-risk="balanced" role="radio" aria-checked="true">Balanced</button>
-              <button type="button" class="risk" data-risk="bold" role="radio" aria-checked="false">Bold</button>
+        <h3>What this guide is not</h3>
+        <p>It is not a way to get rich quickly. Anything promising that is either luck or a lie, and usually a lie. It is not about picking the next hot stock, or timing the market, or watching charts all day. That is stress, not wealth. And it is not personal advice shaped to your exact life. It cannot be. Think of it as the map. You are still the one driving.</p>
+
+        <h3>Why this feels hard</h3>
+        <p>Here is a small truth that helps. Finance is not made complicated on purpose to keep you out. It is complicated partly by accident, and partly by an industry that earns more when you feel you cannot do this without them. Strip away the jargon and the fear, and what is left is simple and very old. Own good things. Add to them steadily. Wait. That is most of it.</p>
+        <p>So we will go slowly. Each step builds on the one before, so read them in order. Sit with each for a few minutes. There is no rush here. In fact, rushing is the opposite of what works.</p>
+
+        <nav class="pager">
+          <button class="pg pg-next" data-goto="2">Next<span class="pg-title">What Is Money</span></button>
+        </nav>
+      </section>
+
+      <!-- STEP 2 -->
+      <section class="panel" id="panel-2" role="tabpanel" aria-labelledby="tab-2" tabindex="0" hidden>
+        <h2>What Is Money</h2>
+        <p class="lead">Let us start from the beginning. Here is a question that stops most people cold. What is money?</p>
+        <p>Not what is a dollar. What is money, deep down? The answer is a little strange, and kind of freeing. Money is a shared story. It works because we all agree it works. A dollar is worth something because everyone around you believes it is, and treats it that way. The day that belief breaks, the paper is just paper.</p>
+        <p>This is not a weakness. It is the whole clever trick. And people have done it in many different ways over time. Let us walk through the story, because it quietly explains everything else in this guide.</p>
+
+        <h3>Before money, there was trade</h3>
+        <p>Long before coins, people just swapped. You have grain, I have fish, we trade. This is called barter, and it has one big problem. I have to want exactly what you have, at the same moment you want what I have. If I want your shoes but you have no use for my fish, we are stuck. No deal.</p>
+        <p>So people looked for a middle thing. Something almost everyone would take, so you did not have to find a perfect match. That middle thing is money. Its first job was simple. Be the thing everyone accepts.</p>
+
+        <h3>The first kinds of money were just things</h3>
+        <p>Early money was whatever was rare, hard to fake, and easy to carry. Different places picked different things. Shells. Beads. Salt, which is where the word salary comes from. Cattle. On one island in the Pacific, giant stone discs.</p>
+        <p>These worked, but not well. Shells could wash up on the beach by the thousand. A cow could not be cut in half to buy something small. People wanted something rare enough to hold its worth, and steady enough to trust.</p>
+
+        <h3>Then came coins</h3>
+        <p>Metal fixed a lot of this. Gold and silver were rare. They did not rust or rot. You could melt them, split them, and stamp them. About twenty six hundred years ago, people started pressing metal into coins of a set weight. A stamp from the king meant you did not have to weigh and test the metal every time. You could just count the coins.</p>
+        <p>This was a big step. For the first time, money was easy to carry, it lasted, and you could count it. Much of the world ran on coins like this for thousands of years.</p>
+
+        <h3>The first big trick: watering it down</h3>
+        <p>Here is where a pattern starts. Watch for it, because it never really stops.</p>
+        <p>Kings made the coins. And kings always seemed to need more money than they had, usually to pay for wars. So they learned a quiet trick. They mixed cheap metal into the coins. A gold coin became a little less gold. Then a little less again. In old Rome, there was a silver coin called the denarius. It started out almost pure silver. Over a couple hundred years, the emperors shaved it down until there was barely any silver left. Same coin. Same name. Much less inside.</p>
+        <p>People were not fooled forever. Prices went up. Trust went down. This is one of the oldest stories in money, and it has a name. Debasement. It means quietly making each coin or dollar worth a little less, so you can make more of them. Remember that word. It runs through this whole story.</p>
+
+        <h3>Paper money, standing for gold</h3>
+        <p>Carrying heavy metal around was a pain, and risky. So a smarter setup grew. You left your gold with a trusted vault. They gave you a paper note that promised your gold back whenever you asked. The paper was light. It was easy to trade. And it still stood for something real. Behind every note was actual gold you could go and collect.</p>
+        <p>For a long time, the big currencies worked like this. A dollar was a claim on real gold. The paper was a promise, and the promise was kept.</p>
+
+        <h3>The day the promise changed</h3>
+        <p>Then it changed. Governments saw that the gold in the vault was a limit. They could only print as many notes as they had gold to back them. In expensive times, that limit got in the way. Bit by bit, they loosened the tie between the dollar and gold. In 1971, the United States cut it completely. The dollar was no longer a claim on gold. It became a promise backed by nothing but the government itself.</p>
+        <p>That is the world you live in now. It is called fiat money. Fiat is an old word that means, roughly, because I say so. The money is worth something because the government says it is, and because we all still believe it. There is no gold behind your dollar anymore. There is only trust.</p>
+
+        <h3>The printing button</h3>
+        <p>Once money is not tied to anything rare, something big becomes possible. You can make more of it whenever you want. Not by melting coins now, but with a few clicks on a computer. When a government wants more money, it can just make more.</p>
+        <p>Sometimes there are good reasons. A crisis. A crash. A pandemic. But every new dollar made means each dollar you already have is worth a little less. It is the old Roman coin trick again, just in nicer clothes. More money exists. Each dollar buys a little less.</p>
+
+        <h3>The pattern, plain and simple</h3>
+        <p>Step back and look at the whole story. Shells, coins, gold, paper, dollars. The shape keeps changing. One thing never does. Every kind of money so far has slowly lost value. Because the people in charge can always make more, and sooner or later, they do.</p>
+        <p>This is not a secret plot. There are no villains. It is just the way money works. Once you see it, you are already ahead of most people, who feel it their whole lives and never notice why.</p>
+
+        <figure class="figure">
+          <ol class="timeline" aria-label="A short history of money">
+            <li><span class="dot"><svg viewBox="0 0 24 24"><path d="M12 4c4 0 7 4 7 9a7 7 0 0 1-14 0c0-2 1-4 3-4" fill="none"/><path d="M12 4v9" fill="none"/></svg></span><span class="t-name">Shells</span></li>
+            <li><span class="dot"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7" fill="none"/><circle cx="12" cy="12" r="3" fill="none"/></svg></span><span class="t-name">Coins</span></li>
+            <li><span class="dot"><svg viewBox="0 0 24 24"><rect x="5" y="9" width="14" height="7" rx="1.5" fill="none"/><path d="M8 9l1-2h6l1 2" fill="none"/></svg></span><span class="t-name">Gold</span></li>
+            <li><span class="dot"><svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="10" rx="1.5" fill="none"/><circle cx="12" cy="12" r="2.5" fill="none"/></svg></span><span class="t-name">Paper notes</span></li>
+            <li><span class="dot"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none"/><path d="M12 8v8M10 10h3a1.5 1.5 0 0 1 0 3h-2a1.5 1.5 0 0 0 0 3h3" fill="none"/></svg></span><span class="t-name">The dollar</span></li>
+            <li><span class="dot dot-now"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none"/><path d="M9.5 9.5a2.5 2.5 0 0 1 4.6 1.3c0 1.7-2.1 1.9-2.1 3.2" fill="none"/><circle cx="12" cy="17" r="0.6"/></svg></span><span class="t-name">Today, trust</span></li>
+          </ol>
+          <figcaption>The shape keeps changing. The slow leak stays the same.</figcaption>
+        </figure>
+
+        <h3>Why this matters for you</h3>
+        <p>If money slowly leaks value on purpose, then holding only cash is a slow way to lose. Not scary. Not sudden. Just a little every year, for your whole life.</p>
+        <p>People who build wealth are not smarter than you about this. They just learned to hold less of the thing that leaks, and more of the things that hold or grow their worth while money fades. That is where we are headed. First, let us see how the leak actually feels in real life. Then we will meet the things that beat it.</p>
+
+        <nav class="pager">
+          <button class="pg pg-prev" data-goto="1">Back<span class="pg-title">Intro to Finance</span></button>
+          <button class="pg pg-next" data-goto="3">Next<span class="pg-title">Why Cash Loses Value</span></button>
+        </nav>
+      </section>
+
+      <!-- STEP 3 -->
+      <section class="panel" id="panel-3" role="tabpanel" aria-labelledby="tab-3" tabindex="0" hidden>
+        <h2>Why Cash Loses Value</h2>
+        <p class="lead">Last step we saw that money slowly loses value. This step is about what that actually feels like. And it is easier to feel than to explain, so let us use a grocery cart.</p>
+
+        <h3>The cart that keeps getting pricier</h3>
+        <p>Picture your usual grocery run. The same cart of food. Milk, eggs, bread, chicken, coffee. A few years ago it cost you, say, 100 dollars. Today the very same cart costs 120. You are not eating more. You did not upgrade anything. The food just costs more.</p>
+        <p>That slow climb has a name. Inflation. It just means prices rising a little over time. And here is the part that catches people off guard. Your money did not shrink. The number in your account is the same. But it buys less. You got a little poorer without spending a dime.</p>
+
+        <h3>Why your savings feel stuck</h3>
+        <p>Now flip it around to the cash side. Say you put 100 dollars in a drawer, or a plain savings account. You do not touch it. A year later it is still 100 dollars. Feels safe, right?</p>
+        <p>But that cart of groceries now costs more. So your 100 dollars buys less food than it did last year. The money sat still while prices walked away from it. Sitting still, it turns out, is slowly going backward.</p>
+
+        <figure class="figure">
+          <div class="erode" aria-label="What 100 dollars buys over time, even at a gentle rate of rising prices">
+            <div class="erode-bar"><div class="fill" style="height:100%"></div><span class="cap">$100<small>today</small></span></div>
+            <div class="erode-bar"><div class="fill" style="height:74%"></div><span class="cap">~$74<small>in 10 years</small></span></div>
+            <div class="erode-bar"><div class="fill" style="height:55%"></div><span class="cap">~$55<small>in 20 years</small></span></div>
+          </div>
+          <figcaption>The same 100 dollars. It does not vanish. It just quietly buys less and less.</figcaption>
+        </figure>
+
+        <h3>But is not cash safe?</h3>
+        <p>This is where a lot of well meaning advice goes wrong. People say cash is the safe choice. And for a short while, it is. Your bank balance will not drop. Nobody breaks in and takes it.</p>
+        <p>But safe from dropping is not the same as safe from shrinking. Over many years, holding only cash is one of the least safe things you can do with your money. It is a slow leak you barely notice, until you look back and see how much it added up to.</p>
+
+        <h3>So why keep any cash at all?</h3>
+        <p>Because cash still has one very important job. It is your cushion for surprises.</p>
+        <p>Life throws curveballs. The car needs a repair. You lose a job for a few months. A surprise bill shows up. When that happens, you do not want to be forced to sell your investments at a bad moment just to cover it. Your cash cushion is what lets you handle the surprise and leave everything else alone.</p>
+        <p>A good rule of thumb. Keep about three to six months of your basic living costs in cash, in a normal savings account, ready for emergencies. That is not a leak. That is peace of mind, and it is worth it.</p>
+        <p>Everything above that cushion is the money we are about to put to work. Because a little cash protects you. Too much cash, sitting for years, quietly holds you back.</p>
+
+        <nav class="pager">
+          <button class="pg pg-prev" data-goto="2">Back<span class="pg-title">What Is Money</span></button>
+          <button class="pg pg-next" data-goto="4">Next<span class="pg-title">The Power of Compounding</span></button>
+        </nav>
+      </section>
+
+      <!-- STEP 4 -->
+      <section class="panel" id="panel-4" role="tabpanel" aria-labelledby="tab-4" tabindex="0" hidden>
+        <h2>The Power of Compounding</h2>
+        <p class="lead">So we own things instead of just holding cash. Why does that work so well over time? One word, and it is the most powerful word in all of money. Compounding. Do not worry about the term. The idea is simple, and kind of beautiful.</p>
+
+        <h3>The snowball</h3>
+        <p>Picture a small snowball at the top of a snowy hill. You give it a push. As it rolls, it picks up snow and gets bigger. Now that it is bigger, it picks up even more snow with each roll. Bigger, then bigger faster, then bigger faster still. By the bottom of the hill, that tiny snowball is huge.</p>
+        <p>Your money can grow the same way. That is compounding. Growth that feeds on itself.</p>
+
+        <h3>How money rolls downhill</h3>
+        <p>Say you own something worth 100 dollars, and in a good year it grows by 10 percent. Now you have 110. The next year, that same 10 percent is not just on your first 100. It is on the whole 110. So you gain 11, not 10. The year after, you gain even more. Each year, your growth grows too.</p>
+        <p>Ten dollars, then eleven, then twelve. It sounds small. It sounds boring. But give it enough years and something wild happens. The gains get bigger than the amount you first put in. Your money starts making more money than you do.</p>
+
+        <h3>Time is the secret ingredient</h3>
+        <p>Here is the catch, and it is a big one. Compounding needs time to do its magic. A snowball needs a long hill. Ten years is a decent start. Twenty years looks great. Thirty years looks almost unfair.</p>
+        <p>This is why starting young beats starting rich. Someone who begins with small amounts in their twenties often ends up ahead of someone who begins with much more in their forties. Not because they were smarter. Because they gave the snowball more hill.</p>
+
+        <figure class="figure">
+          <svg class="grow-chart" viewBox="0 0 640 260" role="img" aria-label="Money left as cash grows slowly in a straight line, while money invested curves upward over time">
+            <line class="axis" x1="40" y1="220" x2="620" y2="220"></line>
+            <line class="axis" x1="40" y1="20" x2="40" y2="220"></line>
+            <path class="line-flat" d="M40 220 L620 150" fill="none"></path>
+            <path class="line-grow" d="M40 220 C300 210 460 150 620 40" fill="none"></path>
+            <circle class="end-flat" cx="620" cy="150" r="4"></circle>
+            <circle class="end-grow" cx="620" cy="40" r="5"></circle>
+            <text class="lbl lbl-flat" x="612" y="140" text-anchor="end">Just saving</text>
+            <text class="lbl lbl-grow" x="612" y="32" text-anchor="end">Owning and growing</text>
+            <text class="axis-note" x="40" y="240">Time</text>
+          </svg>
+          <figcaption>Early on they look close. Give it time, and the gap becomes enormous.</figcaption>
+        </figure>
+
+        <h3>What this means for you</h3>
+        <p>You do not need to be rich to start. You do not need to pick winners. You just need to own good things, add to them, and then be patient while time and compounding do the heavy lifting.</p>
+        <p>That is the quiet secret the wealthy understand. They are not chasing one big win. They started a snowball, and they left it alone long enough to roll.</p>
+
+        <nav class="pager">
+          <button class="pg pg-prev" data-goto="3">Back<span class="pg-title">Why Cash Loses Value</span></button>
+          <button class="pg pg-next" data-goto="5">Next<span class="pg-title">The Four Building Blocks</span></button>
+        </nav>
+      </section>
+
+      <!-- STEP 5 -->
+      <section class="panel" id="panel-5" role="tabpanel" aria-labelledby="tab-5" tabindex="0" hidden>
+        <h2>The Four Building Blocks</h2>
+        <p class="lead">Now the fun part. What do you actually own? You do not need hundreds of things. You need four. That is it. Four simple building blocks, and each one has a job.</p>
+        <p>Think of them like a team. Each player is good at something different. Together, they cover for each other. When one is having a rough year, another is often doing fine. That balance is the whole point.</p>
+
+        <figure class="figure">
+          <div class="assets">
+            <article class="asset a-stocks">
+              <span class="glyph"><svg viewBox="0 0 24 24"><path d="M4 16l5-5 4 4 7-8" fill="none"/><path d="M16 7h4v4" fill="none"/></svg></span>
+              <h3>Stocks</h3>
+              <p>Tiny pieces of real companies. Your engine for growth.</p>
+            </article>
+            <article class="asset a-bonds">
+              <span class="glyph"><svg viewBox="0 0 24 24"><path d="M4 18c4 0 4-12 8-12s4 12 8 12" fill="none"/></svg></span>
+              <h3>Bonds</h3>
+              <p>Loans that pay you steady interest. Your calm, steadying friend.</p>
+            </article>
+            <article class="asset a-gold">
+              <span class="glyph"><svg viewBox="0 0 24 24"><rect x="4" y="14" width="7" height="5" rx="1" fill="none"/><rect x="13" y="14" width="7" height="5" rx="1" fill="none"/><rect x="8.5" y="8" width="7" height="5" rx="1" fill="none"/></svg></span>
+              <h3>Gold</h3>
+              <p>Old and trusted. It just holds its worth. Your insurance.</p>
+            </article>
+            <article class="asset a-bitcoin">
+              <span class="glyph"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none"/><path d="M10 8v8M13 8v8M9 8h4a2 2 0 0 1 0 4H9m0 0h4.4a2 2 0 0 1 0 4H9" fill="none"/></svg></span>
+              <h3>Bitcoin</h3>
+              <p>New, digital, and limited. Your small, bold bet.</p>
+            </article>
+          </div>
+        </figure>
+
+        <h3>Stocks: your engine</h3>
+        <p>A stock is a tiny piece of a real company. When you own it, you own a slice of that business. If you owned a slice of the company that makes your phone, or your favorite coffee chain, then as they sell more and grow, your slice becomes worth more.</p>
+        <p>Stocks are your engine. They are where most of your growth comes from over the years. Companies build things, sell things, and grow, and the owners share in that. Yes, stocks bounce up and down a lot in the short term. But over long stretches, owning good companies has grown wealth better than almost anything else.</p>
+        <p>You will not pick single companies here. That is a hard, stressful game even for the pros. Instead, you buy a tiny slice of hundreds of companies at once, in one simple purchase. More on how in a later step.</p>
+
+        <h3>Bonds: your steady friend</h3>
+        <p>A bond is a loan. When you buy one, you are lending your money to a government or a solid company. In return, they pay you a bit of interest, then give your money back later. That is it. A loan that pays you to make it.</p>
+        <p>Bonds are calm. They do not shoot up like stocks, but they do not crash like them either. They are the steady friend who keeps things level. When stocks are having a scary year, bonds usually hold much steadier. That is their job. To smooth out the ride so you can sleep at night.</p>
+
+        <h3>Gold: your insurance</h3>
+        <p>Gold is old. People have trusted it for thousands of years. It does not earn anything. It does not pay you interest. It just sits there and holds its worth.</p>
+        <p>So why own it? Because it is insurance. Remember how paper money slowly loses value? Gold tends to hold up while that happens. When people get scared, or when money is being printed fast, gold often shines. You are not holding gold to get rich. You are holding it so that when hard times come, one part of your money stays strong.</p>
+
+        <h3>Bitcoin: your small, bold bet</h3>
+        <p>Bitcoin is the new one, and the wild one. It is digital money, and here is its key feature. There will only ever be a fixed amount of it. No king, no government, no bank can make more. Remember debasement, that watering down trick every other money falls to? Bitcoin was built so it cannot happen to it.</p>
+        <p>That is a powerful idea, and a lot of people now believe in it. But it is young, and it swings hard. It can jump way up or drop by half in a single year. So it is a small piece of your mix. Small enough that a rough year will not hurt you much. But real enough that if it keeps growing over time, you were there for it. That is what a small, bold bet means.</p>
+
+        <p>Four blocks. Stocks to grow. Bonds to steady. Gold to insure. Bitcoin for a small, bold bet. Own all four, and you are covered no matter which way the world turns. The only question left is how much of each. That is the next step, and it is where you get to make it yours.</p>
+
+        <nav class="pager">
+          <button class="pg pg-prev" data-goto="4">Back<span class="pg-title">The Power of Compounding</span></button>
+          <button class="pg pg-next" data-goto="6">Next<span class="pg-title">Choosing Your Mix</span></button>
+        </nav>
+      </section>
+
+      <!-- STEP 6 -->
+      <section class="panel" id="panel-6" role="tabpanel" aria-labelledby="tab-6" tabindex="0" hidden>
+        <h2>Choosing Your Mix</h2>
+        <p class="lead">You know the four blocks. Now, how much of each should you own? The honest answer is, it depends on you. Let me show you how to find your own mix.</p>
+
+        <h3>The one question that matters</h3>
+        <p>Forget fancy math. The real question is simple. How much bounce can you handle without panicking?</p>
+        <p>Because your investments will bounce. Some years they jump up. Some years they drop, and it feels awful. The single biggest mistake people make is selling in a panic during a drop. So the goal is a mix that is bumpy enough to grow well, but calm enough that you will not bail when it dips. A mix you can actually stick with.</p>
+
+        <h3>Two easy dials</h3>
+        <p>To keep this simple, two things do most of the work.</p>
+        <p>Gold stays steady, at about fifteen percent, in every mix. It is your insurance, and it does its job quietly in the background. You do not really touch that one.</p>
+        <p>So you are left with two dials. The first is bitcoin. More bitcoin means more possible growth, and a bumpier ride. Less bitcoin means calmer. The second is bonds, and that one follows your age, which we will get to in a moment.</p>
+
+        <h3>Three starting points</h3>
+        <p>Here are three honest mixes to start from, shown for someone in their twenties. Pick the one that matches your gut.</p>
+
+        <figure class="figure">
+          <div class="pies">
+            <div class="pie"><svg class="donut" data-mix="cautious" viewBox="0 0 160 160"></svg><span class="pie-name">Cautious</span><span class="pie-note">The smoothest ride</span></div>
+            <div class="pie"><svg class="donut" data-mix="balanced" viewBox="0 0 160 160"></svg><span class="pie-name">Balanced</span><span class="pie-note">A solid middle</span></div>
+            <div class="pie"><svg class="donut" data-mix="bold" viewBox="0 0 160 160"></svg><span class="pie-name">Bold</span><span class="pie-note">More bounce, more reward</span></div>
+          </div>
+          <div class="pie-legend" id="pieLegend"></div>
+        </figure>
+
+        <p>Cautious keeps only a little bitcoin. The smoothest ride, a bit less growth. Balanced sits right in the middle, a solid default for most people. Bold holds the most bitcoin, more bounce and more room to grow if it pays off.</p>
+        <p>There is no wrong answer here. The best mix is not the one with the biggest numbers on paper. It is the one you will not abandon when things get scary. And they will get scary sometimes. That is normal. Everybody feels it.</p>
+
+        <h3>The age rule for bonds</h3>
+        <p>Now the second dial, bonds. Here is an easy rule. Your bonds should roughly match your age minus 20.</p>
+        <p>So at 25, that is about 5 percent in bonds. At 40, about 20 percent. At 60, about 40 percent. The idea is simple. When you are young, you have decades to ride out the bumps, so you keep bonds low and let your money grow. As you get older, you slowly add bonds to keep things calmer, because you have less time to recover from a big drop.</p>
+        <p>The extra bonds come out of your stocks. Gold and bitcoin stay where you set them. That is the whole rule.</p>
+
+        <h3>Build your own mix</h3>
+        <p>Enough words. Play with it. Pick a comfort level, drag your age, and watch your own mix appear. This is the plan you will actually use.</p>
+
+        <div class="tool" role="group" aria-label="Build your own mix">
+          <div class="tool-controls">
+            <div class="control">
+              <span class="control-label">Your comfort with bounce</span>
+              <div class="risk-group" role="radiogroup" aria-label="Comfort level">
+                <button type="button" class="risk" data-risk="cautious" role="radio" aria-checked="false">Cautious</button>
+                <button type="button" class="risk is-on" data-risk="balanced" role="radio" aria-checked="true">Balanced</button>
+                <button type="button" class="risk" data-risk="bold" role="radio" aria-checked="false">Bold</button>
+              </div>
+            </div>
+            <div class="control">
+              <label class="control-label" for="age">Your age: <strong id="ageOut">25</strong></label>
+              <input type="range" id="age" min="20" max="65" value="25" step="1" />
+              <div class="range-ends"><span>20</span><span>65</span></div>
             </div>
           </div>
-          <div class="control">
-            <label class="control-label" for="age">Your age: <strong id="ageOut">25</strong></label>
-            <input type="range" id="age" min="20" max="65" value="25" step="1" />
-            <div class="range-ends"><span>20</span><span>65</span></div>
+          <div class="tool-viz">
+            <svg class="donut donut-big" id="mixDonut" viewBox="0 0 220 220" role="img" aria-label="Your chosen mix as a pie"></svg>
+            <ul class="mix-legend" id="mixLegend"></ul>
           </div>
+          <p class="tool-live" id="mixLive" aria-live="polite"></p>
         </div>
-        <div class="tool-viz">
-          <svg class="donut donut-big" id="mixDonut" viewBox="0 0 220 220" role="img" aria-label="Your chosen mix as a pie"></svg>
-          <ul class="mix-legend" id="mixLegend"></ul>
-        </div>
-        <p class="tool-live" id="mixLive" aria-live="polite"></p>
-      </div>
-    </section>
 
-    <section class="chapter" id="c7">
-      <div class="wrap">
-        <span class="badge">7</span>
-        <h2>How to actually buy it</h2>
-        <p>Now the easy part.</p>
-        <p>You do not try to guess the perfect day to buy. Nobody can, not even the pros. Instead you buy a little, on a schedule, over and over. Every payday, a set amount goes in. Rain or shine. High prices or low.</p>
-        <p>This is called dollar cost averaging. It sounds fancy. It just means steady, boring, automatic buying.</p>
-        <p>Some weeks you buy when prices are high. Some weeks when they are low. Over years it averages out, and you never have to sweat the timing.</p>
-        <p>Set it up once to happen automatically. Then let it run. The people who win here are rarely the smartest. They are the most consistent.</p>
-      </div>
-      <figure class="figure">
-        <svg class="dca-chart" viewBox="0 0 640 260" role="img" aria-label="The price wanders up and down, but you buy the same amount every month regardless">
-          <line class="axis" x1="40" y1="220" x2="620" y2="220"></line>
-          <path class="dca-line" fill="none" d="M60 120 L150 70 L240 160 L330 110 L420 190 L510 90 L600 130"></path>
-          <g class="buys">
-            <circle cx="60" cy="120" r="7"></circle>
-            <circle cx="150" cy="70" r="7"></circle>
-            <circle cx="240" cy="160" r="7"></circle>
-            <circle cx="330" cy="110" r="7"></circle>
-            <circle cx="420" cy="190" r="7"></circle>
-            <circle cx="510" cy="90" r="7"></circle>
-            <circle cx="600" cy="130" r="7"></circle>
-          </g>
-          <text class="dca-note" x="40" y="245">Every payday, the same amount goes in.</text>
-        </svg>
-        <figcaption>You buy high and low, and stop trying to be clever about it.</figcaption>
-      </figure>
-    </section>
+        <p>Write your four numbers down somewhere. That is your target. In the next steps, we will fill it, and keep it there.</p>
 
-    <section class="chapter" id="c8">
-      <div class="wrap">
-        <span class="badge">8</span>
-        <h2>The only upkeep you need</h2>
-        <p>Over time, your mix drifts.</p>
-        <p>Say bitcoin has a great year. Now it is a bigger slice than you planned. Your calm mix has quietly turned risky.</p>
-        <p>So once or twice a year, you tidy up. This is called rebalancing. You sell a little of what grew too big. You add to what shrank. That brings you back to your chosen mix.</p>
-        <p>It feels backward, and that is the point. You trim the thing everyone is excited about. You add to the thing everyone forgot. Quietly, this makes you buy low and sell high.</p>
-        <p>That is the whole maintenance plan. Check once or twice a year. Nudge it back to your mix. Otherwise, leave it alone. Boring on purpose. Boring is what works.</p>
-      </div>
-      <figure class="figure">
-        <div class="rebal">
-          <div class="rebal-item"><svg class="donut donut-sm" id="rebalDrift" viewBox="0 0 150 150"></svg><span>Drifted after a big run</span></div>
-          <div class="rebal-arrow" aria-hidden="true">
-            <svg viewBox="0 0 60 40"><path d="M8 20h40M40 12l10 8-10 8" fill="none"/></svg>
-            <small>tidy up</small>
+        <nav class="pager">
+          <button class="pg pg-prev" data-goto="5">Back<span class="pg-title">The Four Building Blocks</span></button>
+          <button class="pg pg-next" data-goto="7">Next<span class="pg-title">How to Invest</span></button>
+        </nav>
+      </section>
+
+      <!-- STEP 7 -->
+      <section class="panel" id="panel-7" role="tabpanel" aria-labelledby="tab-7" tabindex="0" hidden>
+        <h2>How to Invest</h2>
+        <p class="lead">You have your mix. Now, how do you actually buy it without stressing about the perfect moment? Good news. The best way is also the easiest way.</p>
+
+        <h3>Stop trying to time it</h3>
+        <p>The dream is to buy right before everything goes up, and sell right before it drops. Here is the truth. Nobody can do that. Not you, not me, not the experts on TV in the fancy suits. People who try to time the market almost always do worse than people who do not.</p>
+        <p>So we are not going to try. We are going to do something much simpler, and much calmer.</p>
+
+        <h3>Buy a little, again and again</h3>
+        <p>The trick is to buy a small, set amount on a regular schedule. Every payday, the same amount goes in. No matter what the price is doing. Prices up? You buy. Prices down? You buy. You do not think about it. You just keep going.</p>
+        <p>This has a fancy name, dollar cost averaging, but the idea is plain. Buy steadily, no matter the weather.</p>
+
+        <h3>Why this works so well</h3>
+        <p>Some weeks you will buy when prices are high. Some weeks when they are low. Over time, it all averages out to a fair price. You never have to guess. You never have to sweat the timing. And you never lie awake wondering if today was the right day.</p>
+        <p>Even better, when prices drop and everyone else is scared, your steady buying is quietly scooping things up cheap. The dip becomes a sale, not a scare.</p>
+
+        <figure class="figure">
+          <svg class="dca-chart" viewBox="0 0 640 260" role="img" aria-label="The price wanders up and down, but you buy the same amount every payday regardless">
+            <line class="axis" x1="40" y1="220" x2="620" y2="220"></line>
+            <path class="dca-line" fill="none" d="M60 120 L150 70 L240 160 L330 110 L420 190 L510 90 L600 130"></path>
+            <g class="buys">
+              <circle cx="60" cy="120" r="7"></circle>
+              <circle cx="150" cy="70" r="7"></circle>
+              <circle cx="240" cy="160" r="7"></circle>
+              <circle cx="330" cy="110" r="7"></circle>
+              <circle cx="420" cy="190" r="7"></circle>
+              <circle cx="510" cy="90" r="7"></circle>
+              <circle cx="600" cy="130" r="7"></circle>
+            </g>
+            <text class="dca-note" x="40" y="245">Every payday, the same amount goes in.</text>
+          </svg>
+          <figcaption>The price wanders up and down. You put in the same amount through all of it.</figcaption>
+        </figure>
+
+        <h3>Set it and forget it</h3>
+        <p>Here is the best part. You can make this automatic. Most banks and brokerages let you set up a transfer that happens on its own every payday. You turn it on once. Then it just runs in the background, building your future while you live your life.</p>
+        <p>This is the real secret, and it is almost boring. The people who win at this are not the smartest. They are the most steady. Set it up. Let it run. Get on with your day.</p>
+
+        <nav class="pager">
+          <button class="pg pg-prev" data-goto="6">Back<span class="pg-title">Choosing Your Mix</span></button>
+          <button class="pg pg-next" data-goto="8">Next<span class="pg-title">Rebalancing</span></button>
+        </nav>
+      </section>
+
+      <!-- STEP 8 -->
+      <section class="panel" id="panel-8" role="tabpanel" aria-labelledby="tab-8" tabindex="0" hidden>
+        <h2>Rebalancing</h2>
+        <p class="lead">You picked your mix. You are buying it steadily. There is just one small chore left, and you only do it once or twice a year. It is called rebalancing, and it is easier than it sounds.</p>
+
+        <h3>How your mix drifts</h3>
+        <p>Over time, your nice, neat mix gets messy on its own. Here is why. Your four blocks grow at different speeds.</p>
+        <p>Say bitcoin has a great year and shoots up. Now it is a much bigger slice of your money than you planned. Your calm little mix has quietly turned risky, without you doing a thing. The winners grow into too large a share, and suddenly you are holding more risk than you meant to.</p>
+
+        <figure class="figure">
+          <div class="rebal">
+            <div class="rebal-item"><svg class="donut donut-sm" id="rebalDrift" viewBox="0 0 150 150"></svg><span>Bitcoin grew into a big slice</span></div>
+            <div class="rebal-arrow" aria-hidden="true">
+              <svg viewBox="0 0 60 40"><path d="M8 20h40M40 12l10 8-10 8" fill="none"/></svg>
+              <small>tidy up</small>
+            </div>
+            <div class="rebal-item"><svg class="donut donut-sm" id="rebalFixed" viewBox="0 0 150 150"></svg><span>Back to your plan</span></div>
           </div>
-          <div class="rebal-item"><svg class="donut donut-sm" id="rebalFixed" viewBox="0 0 150 150"></svg><span>Back to your mix</span></div>
-        </div>
-      </figure>
-    </section>
+          <figcaption>Rebalancing just walks the left picture back to the right one.</figcaption>
+        </figure>
 
-    <section class="chapter" id="c9">
-      <div class="wrap">
-        <span class="badge">9</span>
-        <h2>Where all this actually happens</h2>
-        <p>One last thing trips up almost everyone. Where does this money even go?</p>
-        <p>A bank holds your cash. Checking and savings. You know banks already.</p>
-        <p>A brokerage is where investments live. It is just an account for buying and holding things like stocks, bonds, gold, and bitcoin. Think of it as a bank account, but for owning instead of spending.</p>
-        <p>Opening one is free and takes about 15 minutes. Trusted names include Fidelity, Schwab, and Vanguard. You link your bank, move money over, and buy your four building blocks right there.</p>
-        <p>Good news for the bitcoin slice. You do not need a crypto app or a secret password. You can buy bitcoin as a simple fund, sitting right next to your stock fund, inside the same account.</p>
-        <p>Is your money safe there? If the brokerage itself ever failed, your investments are protected up to generous limits. That protection is about the company failing, not about prices moving. Investments still rise and fall. That part is normal and expected. And your money is never trapped. You can sell and move it back to your bank whenever you want.</p>
-      </div>
-      <figure class="figure">
-        <div class="flow">
-          <div class="flow-box box-bank">
-            <span class="flow-glyph"><svg viewBox="0 0 24 24"><path d="M4 10l8-5 8 5" fill="none"/><path d="M5 10v8M19 10v8M9 10v8M15 10v8M3 19h18" fill="none"/></svg></span>
-            <h4>Your bank</h4>
-            <p>Holds your cash. Checking and savings.</p>
+        <h3>The fix is simple</h3>
+        <p>Once or twice a year, you tidy up. You sell a little of whatever grew too big. You add to whatever got too small. That brings your mix back to your target. That is it. Twenty minutes, once or twice a year.</p>
+
+        <h3>The quiet trick hidden inside</h3>
+        <p>Here is the beautiful part. Look at what rebalancing makes you do. It makes you sell a little of the thing that went up. And buy more of the thing that went down.</p>
+        <p>Sell high. Buy low. The exact thing everyone says you should do, and almost nobody actually does, because it feels backward. It feels wrong to trim your winner and add to your loser. But that feeling is the point. The rule does the smart thing for you, so your emotions do not get a vote.</p>
+
+        <h3>Do not overdo it</h3>
+        <p>One warning. Do not fiddle with it constantly. Checking every day and tweaking all the time will drive you crazy, and it usually hurts more than it helps. Once or twice a year is plenty. Pick a date you will remember, maybe your birthday and half a year later. Tidy up. Then leave it alone.</p>
+        <p>That is the whole job. Buy steadily. Rebalance rarely. Otherwise, do nothing. Boring on purpose. Boring is what works.</p>
+
+        <nav class="pager">
+          <button class="pg pg-prev" data-goto="7">Back<span class="pg-title">How to Invest</span></button>
+          <button class="pg pg-next" data-goto="9">Next<span class="pg-title">Accounts and Brokers</span></button>
+        </nav>
+      </section>
+
+      <!-- STEP 9 -->
+      <section class="panel" id="panel-9" role="tabpanel" aria-labelledby="tab-9" tabindex="0" hidden>
+        <h2>Accounts and Brokers</h2>
+        <p class="lead">One last thing trips up almost everyone, and it is not the investing itself. It is a simple question. Where does all this money actually go? Let us clear that up.</p>
+
+        <h3>A bank versus a brokerage</h3>
+        <p>You already know what a bank is. It holds your cash. Your checking account for spending, your savings account for your cushion. Simple.</p>
+        <p>A brokerage is just the next door over. It is an account built for owning investments instead of cash. Think of it exactly like a bank account, except instead of holding dollars, it holds your stocks, bonds, gold, and bitcoin. That is the only real difference. One holds cash. The other holds the things you own.</p>
+
+        <figure class="figure">
+          <div class="flow">
+            <div class="flow-box box-bank">
+              <span class="flow-glyph"><svg viewBox="0 0 24 24"><path d="M4 10l8-5 8 5" fill="none"/><path d="M5 10v8M19 10v8M9 10v8M15 10v8M3 19h18" fill="none"/></svg></span>
+              <h4>Your bank</h4>
+              <p>Holds your cash. Checking and savings.</p>
+            </div>
+            <div class="flow-move" aria-hidden="true">
+              <svg viewBox="0 0 70 40"><path d="M6 20h50M48 12l10 8-10 8" fill="none"/></svg>
+              <small>move money in</small>
+            </div>
+            <div class="flow-box box-broker">
+              <span class="flow-glyph"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2" fill="none"/><path d="M4 9h16" fill="none"/></svg></span>
+              <h4>Your brokerage</h4>
+              <p>Holds your investments.</p>
+              <div class="broker-dots"><span style="background:var(--stocks)"></span><span style="background:var(--bonds)"></span><span style="background:var(--gold)"></span><span style="background:var(--bitcoin)"></span></div>
+            </div>
           </div>
-          <div class="flow-move" aria-hidden="true">
-            <svg viewBox="0 0 70 40"><path d="M6 20h50M48 12l10 8-10 8" fill="none"/></svg>
-            <small>move money in</small>
-          </div>
-          <div class="flow-box box-broker">
-            <span class="flow-glyph"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2" fill="none"/><path d="M4 9h16" fill="none"/></svg></span>
-            <h4>Your brokerage</h4>
-            <p>Holds your investments.</p>
-            <div class="broker-dots"><span style="background:var(--stocks)"></span><span style="background:var(--bonds)"></span><span style="background:var(--gold)"></span><span style="background:var(--bitcoin)"></span></div>
-          </div>
-        </div>
-      </figure>
-      <div class="wrap">
-        <h3 class="sub-head">Two kinds of accounts</h3>
-        <p>Inside a brokerage you can open different kinds of accounts. For a beginner, there are really just two families.</p>
-        <p>Retirement accounts come with tax perks, because the government wants you to save for later. The tradeoff is that the money is meant to stay put until you are older. A common one worth reading about is the Roth. For someone young, it is one of the best deals in all of money.</p>
-        <p>Individual accounts have no special tax perks, but no strings either. You can add or take out money anytime.</p>
-        <p>A simple order for most people. First build a small cash cushion at your bank. Then invest for the long haul in a retirement account for the tax perks. Then use an individual account for anything beyond that.</p>
-        <p>You do not need to master this today. Just know the two families exist.</p>
-      </div>
-    </section>
+          <figcaption>Money in the bank. Investments in the brokerage. You move money over, then buy your four blocks.</figcaption>
+        </figure>
 
-    <section class="chapter closing" id="c10">
-      <div class="wrap">
-        <span class="badge">10</span>
-        <h2>Now just start</h2>
-        <p>Here is everything, in a breath.</p>
-        <p>Money slowly loses value, so you own things instead of only cash. You own four simple blocks. Stocks to grow, bonds to steady, gold to insure, bitcoin for a bold little bet. You pick a mix you can stay calm with. You buy a bit every payday, automatically. Once or twice a year you nudge it back to your mix. Then you let time and patience do the rest.</p>
-        <p>That is it. That is the whole thing.</p>
-        <p>The hardest step is the first one. Not because it is complicated, but because starting feels scary when it is new. It will not feel scary for long.</p>
-        <p>You do not need to be perfect. You just need to begin, and then keep going.</p>
-        <p class="signoff">You have got this.</p>
-      </div>
-    </section>
+        <h3>Opening one is easy</h3>
+        <p>This part is less scary than people expect. Opening a brokerage account is free, and it takes about fifteen minutes on your phone or laptop. A few trusted names most people use are Fidelity, Schwab, and Vanguard. Any of them is fine.</p>
+        <p>You sign up, link your regular bank account, move some money over, and you are ready to buy. That is genuinely it.</p>
 
-  </main>
+        <h3>The bitcoin part is simple too</h3>
+        <p>Good news, especially for the bitcoin block. You do not need a strange app, a secret password, or anything technical. You can buy bitcoin as a simple fund that sits right next to your stock fund, inside the very same brokerage account. One place, four blocks. Nice and tidy.</p>
 
-  <footer class="foot">
-    <div class="wrap">
-      <p class="disclaimer">A quick, honest note. This guide is for learning, not personal financial advice. It does not know your full situation. Use it to understand the ideas, and talk to someone qualified before making big money decisions. Investing always carries risk, including the chance of loss.</p>
-      <p class="colophon">Start Here. A gentle first guide.</p>
-    </div>
-  </footer>
+        <h3>Is my money safe there?</h3>
+        <p>A fair question. Yes, in the way that matters. If the brokerage company itself ever went under, your investments are protected, up to large limits, and moved somewhere safe. So the company failing is not something to lose sleep over.</p>
+        <p>But be clear on one thing. That protection is about the company, not about prices. Your investments will still go up and down in value. That is normal, and it is not a sign anything is broken. Rising and falling is simply what investments do. And your money is never locked away. You can sell and move it back to your bank whenever you want.</p>
+
+        <h3>Two kinds of accounts</h3>
+        <p>Last piece. Inside a brokerage, you can open different types of accounts. For a beginner, there are really just two families to know.</p>
+        <p>Retirement accounts come with a gift. The government gives you a tax break for using them, because they want you to save for later. The catch is that the money is meant to stay put until you are older. One popular kind is called a Roth. For a young person, it is one of the best deals in all of money, so it is worth reading a little more about on your own.</p>
+        <p>Individual accounts are the other family. No special tax break, but also no rules about when you can touch it. You can add or take out money anytime.</p>
+        <p>A simple order for most people. First, keep your cash cushion at your bank. Then invest for the long run in a retirement account, to grab that tax break. Then, if you still have more to invest, use an individual account for the rest.</p>
+        <p>You do not have to master all of this today. Just know the two families exist, and that a Roth is worth a look. That is enough to start.</p>
+
+        <nav class="pager">
+          <button class="pg pg-prev" data-goto="8">Back<span class="pg-title">Rebalancing</span></button>
+          <button class="pg pg-next" data-goto="10">Next<span class="pg-title">Getting Started</span></button>
+        </nav>
+      </section>
+
+      <!-- STEP 10 -->
+      <section class="panel" id="panel-10" role="tabpanel" aria-labelledby="tab-10" tabindex="0" hidden>
+        <h2>Getting Started</h2>
+        <p class="lead">You made it. You now understand more about money than most adults ever will. So let us pull it all together, and then talk about the only thing left to do.</p>
+
+        <h3>The whole guide, in one breath</h3>
+        <p>Here is everything you learned, start to finish.</p>
+        <p>Money slowly loses value, so you own things instead of just holding cash. You own four simple blocks. Stocks to grow, bonds to steady, gold to insure, and bitcoin for a small, bold bet. You pick a mix you can stay calm with, using your age for the bonds. You buy a little every payday, automatically, without trying to time anything. Once or twice a year, you tidy it back to your mix. Then you let time and compounding do the quiet, heavy work.</p>
+        <p>That is the whole thing. Read that paragraph again. You truly understand it now.</p>
+
+        <h3>Your first steps</h3>
+        <p>So what do you actually do next? Keep it small and simple.</p>
+        <ul class="learn">
+          <li>Make sure you have a little cash cushion in savings first</li>
+          <li>Open a brokerage account, it takes about fifteen minutes</li>
+          <li>Set up a small automatic transfer every payday</li>
+          <li>Buy your four blocks in the mix you chose</li>
+          <li>Then get on with your life, and let it grow</li>
+        </ul>
+        <p>Start small if you want. You can begin with a little and add more as you get comfortable. The amount matters far less than the habit.</p>
+
+        <h3>The only thing that is hard</h3>
+        <p>Let me be honest about the one real challenge. It is not the math. It is not picking funds. It is starting, and then staying calm.</p>
+        <p>Starting feels scary because it is new. It will not feel new for long. And staying calm during the scary dips is hard, because your gut screams at you to run. But you know better now. You know the dips are normal. You know your steady buying turns them into sales. You know the plan.</p>
+        <p>You do not need to be perfect. You will make small mistakes, and that is fine. You just need to begin, and then keep going. That steady, patient, boring approach is exactly how ordinary people build real wealth.</p>
+
+        <h3>A quick, honest note</h3>
+        <p>This guide is here to teach you the ideas, not to give you personal advice. It does not know your full life, your debts, or your goals. Use it to understand how all this works, and if you are making a big decision, it is always smart to talk with someone qualified first. Investing always carries some risk, including the chance of losing money. Going in with open eyes is part of doing this well.</p>
+        <p class="signoff">That is it. That is everything. Now go plant your first seed. You have got this.</p>
+
+        <nav class="pager">
+          <button class="pg pg-prev" data-goto="9">Back<span class="pg-title">Accounts and Brokers</span></button>
+        </nav>
+      </section>
+
+      <footer class="mini">A gentle first guide. For learning, not personal financial advice.</footer>
+
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
